@@ -9,7 +9,7 @@
 
 			<button 
 				v-if="$store.state.total_posts > posts.length" 
-				@click="$store.dispatch('LoadMorePosts', 6)"
+				@click="$store.dispatch('LoadMorePosts', 2)"
 				class="btn mt-8">
 				Load more
 			</button>
@@ -35,7 +35,7 @@ export default {
 		const posts = computed(() => store.getters.posts)
 
 		onMounted(() => {
-			store.dispatch("FetchPosts", 6)
+			store.dispatch("FetchPosts", 2)
 
 			const query = '*[_type == "post"]'
 
