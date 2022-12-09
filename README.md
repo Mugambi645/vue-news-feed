@@ -1,5 +1,15 @@
 # vue-sanity-news
 
+## Sanity setup
+```
+sanity install
+
+```
+### Installs packages
+```
+sanity start
+```
+### Starts sanity studio manager
 ## Project setup
 ```
 npm install
